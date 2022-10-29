@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -37,10 +38,13 @@ export default function Home() {
             <h2>Deploy &rarr;</h2>
             <p>Deploy your Next.js site to a public URL with Vercel.</p>
           </a>
+          <Link href="#footer">
+            Link To Footer
+          </Link>
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      <footer className={styles.footer} id="footer">
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
